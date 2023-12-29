@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".MoviesActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Movie List"
+        android:textColor="#c1121f"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txttitle"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="10dp"
+        android:hint="Title of your movie \n like: Alone, Bloodshot ..."
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btngetMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txttitle"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#073b4c"
+        android:onClick="btn_OnClick"
+        android:text="Get Movies" />
+
+    <ScrollView
+        android:layout_width="375dp"
+        android:layout_height="227dp"
+        android:layout_below="@id/btngetMovies"
+        android:id="@+id/sc">
+
+        <TextView
+            android:id="@+id/txtRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/movies" />
+
+
+</RelativeLayout>
