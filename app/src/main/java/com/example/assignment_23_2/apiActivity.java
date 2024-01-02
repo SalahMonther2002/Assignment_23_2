@@ -12,11 +12,12 @@ import android.widget.Toast;
 
 public class apiActivity extends AppCompatActivity {
 
-    /* Regarding cars, I have read information that may be of interest to the user,
-    the power of the car in terms of speed, and where this car was made. In my opinion, this is information of interest to the user.
-    /* The same applies to movies, where there is information that may interest the user.
-    * */
-    private final String[] itemList = {"Cars","Movies"} ;
+    /*
+        My application is about giving information about sports, especially for iron players(Your guide in the GYM ).
+        The information was taken from the API for this field of sports.
+        As for the movies, I have attached them only for information that any user of this application can use only.
+     */
+    private final String[] itemList = {"Exercise","Calories Burned", "Movies"} ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +33,16 @@ public class apiActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    Intent intent = new Intent( apiActivity.this, CarsActivity.class  );
+                    Intent intent = new Intent( apiActivity.this, ExerciseActivity.class  );
                     startActivity(intent);
                 }
                 else if(position == 1  ){
-                    Intent intent = new Intent( apiActivity.this, MoviesActivity.class  );
+                    Intent intent = new Intent( apiActivity.this, CaloriesActivity.class  );
                     startActivity(intent);
 
+                }else if(position == 2  ) {
+                    Intent intent = new Intent(apiActivity.this, MoviesActivity.class);
+                    startActivity(intent);
                 }
 
             }

@@ -22,7 +22,7 @@
       android:paddingTop="20dp"
       android:paddingBottom="10dp"
       android:layout_marginBottom="10dp"
-      android:text="I read data from two web services, the first is about cars and the second is about movies!! Great!!"
+      android:text="I read data from three web services, the first is about Exercise, the second is about Calories and the third is about movies!! Great!!"
       android:textColor="#070707"
       android:textSize="20sp"
       android:textStyle="bold|italic" />

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".CaloriesActivity">
+
+    <TextView
+        android:id="@+id/txt112"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calories burned List"
+        android:textColor="#100E0E"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txttitle12"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt112"
+        android:layout_marginTop="10dp"
+        android:hint="You can search for any activities you want, such as ski , walk ..."
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btngetcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txttitle12"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#073b4c"
+        android:onClick="btn_OnClick"
+        android:text="Get Calories" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Note that: For each specific type of activity, you have many activities."
+        android:layout_below="@id/btngetcalories"
+        android:id="@+id/t1"/>
+
+    <ScrollView
+        android:id="@+id/sc12"
+        android:layout_width="wrap_content"
+        android:layout_height="144dp"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="20dp">
+
+        <ListView
+            android:id="@+id/listV21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sc12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ccc" />
+</RelativeLayout>
